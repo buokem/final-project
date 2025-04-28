@@ -9,13 +9,7 @@ let currentFullDate = new Date();
 let eventData = [];
 // Load from localStorage if available
 
-if (
-    page.includes("index.html") ||
-    page === "/" ||
-    page === "/index.html" ||
-    page === "/final-project/" ||
-    page === "/final-project/index.html"
-) {
+if (path.endsWith("/") || path.endsWith("/index.html")) {
 
     //get event data
     let storedData = localStorage.getItem('eventData');
