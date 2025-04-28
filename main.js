@@ -226,7 +226,7 @@ if (path.endsWith("/") || path.endsWith("/index.html")) {
 
 
 
-if (page.includes("summary.html")) {
+if (path.includes("summary.html")) {
     // Load event data from localStorage
     const storedData = localStorage.getItem('eventData');
     const eventData = storedData ? JSON.parse(storedData) : [];
