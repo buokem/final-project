@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-body">
+    <nav class="navbar">
+        <a href="index.html">Calendar</a>
+        <a href="summary.html">Monthly Summary</a>
+        <a href="about.html">About</a>
+    </nav>
+    <div class="calendar-container">
+        <div class="calendar-activity">
+            <div class="current-date-container">
+                <h1 class="current-date"></h1>
+                <h3 class="current-day"></h3>
+            </div>
+    
+            <div class="current-event-container">
+                <p>Current Events</p>
+                <ul class="current-event-list">
+                    
+                </ul>
+            </div>
+    
+            <div class="create-event-container">
+                <input type="text" name="event" id="event" placeholder="Create an event">
+                <span id="add-event-button">+</span>
+            </div>
+        </div>
+        <div class="calendar-display">
+            <div class="calendar-top">
+                <div class="current-month-year">
+                    <span class="current-month"></span>
+                    <span class="current-year"></span>
+                </div>
+    
+                <div class="nav-buttons">
+                    <span id="previous"> < </span>
+                    <span id="next"> > </span>
+                </div>
+            </div>
+    
+            <div class="calendar-dates">
+                <div class="weekdays">Sun</div>
+                <div class="weekdays">Mon</div>
+                <div class="weekdays">Tue</div>
+                <div class="weekdays">Wed</div>
+                <div class="weekdays">Thur</div>
+                <div class="weekdays">Fri</div>
+                <div class="weekdays">Sat</div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="main.js"></script>
+</body>
+</html>
