@@ -3,7 +3,7 @@ const months = ["January", "February", "March", "April", "May", "June", "July", 
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const daysChecker = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
 
-let page = window.location.pathname;
+let path = window.location.pathname;
 let currentFullDate = new Date();
 //for events
 let eventData = [];
