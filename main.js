@@ -4,13 +4,13 @@ const months = ["January", "February", "March", "April", "May", "June", "July", 
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const daysChecker = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
 
-let path = window.location.pathname;
+let page = window.location.pathname;
 let currentFullDate = new Date();
 //for events
 let eventData = [];
 // Load from localStorage if available
 
-if (path.includes("index.html") || path.endsWith("/")) {
+if (page.endsWith("/") || page.includes("/index.html")) {
 
     //get event data
     let storedData = localStorage.getItem('eventData');
@@ -227,7 +227,7 @@ if (path.includes("index.html") || path.endsWith("/")) {
 
 
 
-if (path.includes("summary.html")) {
+if (page.includes("/summary.html")) {
     // Load event data from localStorage
     const storedData = localStorage.getItem('eventData');
     const eventData = storedData ? JSON.parse(storedData) : [];
